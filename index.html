@@ -1,1 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Barnali 🎂</title>
 
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: #333;
+}
+
+.card {
+  width: 90%;
+  max-width: 420px;
+  background: rgba(255,255,255,0.94);
+  border-radius: 25px;
+  padding: 35px 25px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  position: relative;
+  z-index: 2;
+}
+
+h1 {
+  color: #e75480;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 28px;
+  font-weight: bold;
+  color: #d94f70;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+button {
+  margin-top: 20px;
+  border: none;
+  padding: 14px 25px;
+  border-radius: 30px;
+  background: #e75480;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+#message {
+  display: none;
+  margin-top: 25px;
+  animation: fade 1s ease;
+}
+
+.heart {
+  position: absolute;
+  color: rgba(255,255,255,0.7);
+  font-size: 25px;
+  animation: float 6s linear infinite;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-120px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="heart" style="left:10%; animation-delay:0s;">❤️</div>
+<div class="heart" style="left:30%; animation-delay:2s;">💗</div>
+<div class="heart" style="left:55%; animation-delay:1s;">💕</div>
+<div class="heart" style="left:80%; animation-delay:3s;">❤️</div>
+
+<div class="card">
+
+  <h1>🎂 Happy Birthday 🎂</h1>
+
+  <div class="name">Barnali Roy ❤️</div>
+
+  <p>
+    Wishing you a very Happy Birthday! 🥳
+  </p>
+
+  <p>
+    I know thoda late ho gaya...
+    Birthday yaad na rehne ke liye genuinely sorry. 😅
+    I hope tum mujhe maaf kar dogi.
+  </p>
+
+  <p>
+    Bas itna kehna tha ki tumhara special day
+    achha ho aur tum hamesha khush raho. 😊
+  </p>
+
+  <button onclick="showMessage()">
+    🎁 Ek chhota sa message
+  </button>
+
+  <div id="message">
+    <p>
+      Once again, <b>Happy Birthday Barnali! 🎉</b><br><br>
+      Enjoy your day, smile a lot,
+      aur haan... meri late wish accept kar lena. 😄❤️
+    </p>
+  </div>
+
+</div>
+
+<script>
+function showMessage() {
+  document.getElementById("message").style.display = "block";
+}
+</script>
+
+</body>
+</html>
